@@ -57,7 +57,7 @@ export default function Assistant({ title, logo, onConnect }: AssistantProps) {
   const [voices, setVoices] = useState<Voice[]>([]);
   const [settings, setSettings] = useState<Settings>({
     openaiApiKey: "",
-    systemPrompt: "You are a voice assistant created by LiveKit. Your interface with users will be voice. Pretend we're having a conversation, no special formatting or headings, just natural speech.",
+    systemPrompt: "You are a voice assistant created by LiveKit. Your interface with users will be voice. Pretend we&apos;re having a conversation, no special formatting or headings, just natural speech.",
     aiModel: "gpt-4o-mini"
   });
   const [showSettings, setShowSettings] = useState(false);
@@ -65,6 +65,7 @@ export default function Assistant({ title, logo, onConnect }: AssistantProps) {
   const { localParticipant } = useLocalParticipant();
   const [currentVoiceId, setCurrentVoiceId] = useState<string>("");
   const windowSize = useWindowResize();
+  const isMobileView = useMemo(() => windowSize.width < mobileWindowWidth, [windowSize.width]);
   const {
     agent: agentParticipant,
     state: agentState,
@@ -78,9 +79,9 @@ export default function Assistant({ title, logo, onConnect }: AssistantProps) {
   const tracks = useTracks();
 
   useEffect(() => {
-    setIsMobile(windowSize.width < mobileWindowWidth);
-    setShowVoices(windowSize.width >= mobileWindowWidth);
-  }, [windowSize]);
+    setIsMobile(isMobileView);
+    setShowVoices(!isMobileView);
+  }, [isMobileView]);
 
   useEffect(() => {
     if (roomState === ConnectionState.Connected) {
@@ -97,10 +98,10 @@ export default function Assistant({ title, logo, onConnect }: AssistantProps) {
 
   const handleSettingsClick = useCallback(() => {
     setShowSettings(!showSettings);
-    if (windowSize.width < mobileWindowWidth) {
+    if (isMobileView) {
       setShowVoices(false);
     }
-  }, [showSettings, windowSize.width]);
+  }, [showSettings, isMobileView]);
 
   const subscribedVolumes = useMultibandTrackVolume(
     agentAudioTrack?.publication.track,
@@ -421,7 +422,7 @@ export default function Assistant({ title, logo, onConnect }: AssistantProps) {
         )}
       </div>
     );
-  }, [isAgentConnected, settings, onUpdateSettings]);
+  }, [isAgentConnected, settings, onUpdateSettings, windowSize.width]);
 
   return (
     <>

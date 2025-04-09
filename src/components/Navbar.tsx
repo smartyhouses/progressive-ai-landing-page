@@ -2,6 +2,7 @@
 
 import { motion, AnimatePresence } from 'framer-motion';
 import Link from 'next/link';
+import Image from 'next/image';
 import { useState } from 'react';
 
 export const Navbar = () => {
@@ -27,8 +28,8 @@ export const Navbar = () => {
           {/* Logo */}
           <div className="flex items-center">
             <Link href="/" className="flex items-center gap-3">
-              <img src="/progressive_ai_logo.png" alt="Progressive AI" className="h-8" />
-              <img src="/progressive AI_text logo.png" alt="Progressive AI" className="h-6" />
+              <Image src="/progressive_ai_logo.png" alt="Progressive AI" width={32} height={32} className="h-8 w-auto" />
+              <Image src="/progressive AI_text logo.png" alt="Progressive AI" width={120} height={24} className="h-6 w-auto" />
             </Link>
           </div>
 
