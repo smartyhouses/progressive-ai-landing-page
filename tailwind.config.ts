@@ -38,6 +38,10 @@ const config: Config = {
   content: ["./src/**/*.{ts,tsx}"],
   prefix: "",
   theme: {
+    fontFamily: {
+      sans: ['var(--font-opensans)', 'system-ui', 'sans-serif'],
+      heading: ['var(--font-montserrat)', 'system-ui', 'sans-serif'],
+    },
     container: {
       center: true,
       padding: "2rem",

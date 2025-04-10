@@ -26,29 +26,31 @@ export const MicrophoneButton = ({
   return (
     <Button
       state="secondary"
-      size="medium"
-      className="flex items-center justify-center gap-2"
+      size="small"
+      className="flex items-center justify-center gap-1 h-10 w-10 rounded-full p-0 overflow-hidden"
       onClick={() => {}}
     >
       <TrackToggle
         source={Track.Source.Microphone}
         className={
-          "flex items-center justify-center gap-2 h-full " +
+          "flex items-center justify-center w-full h-full " +
           (isMuted ? "opacity-50" : "")
         }
         showIcon={false}
       >
-        {isMuted ? <MicrophoneOffSVG /> : <MicrophoneOnSVG />}
-        <AgentMultibandAudioVisualizer
-          state="speaking"
-          barWidth={3}
-          minBarHeight={2}
-          maxBarHeight={16}
-          frequencies={localMultibandVolume}
-          gap={2}
-        />
-        <div className="w-[2px] bg-white/20 h-4"></div>
-        <DeviceSelector kind="audioinput" />
+        <div className="w-5 h-5">
+          {isMuted ? <MicrophoneOffSVG /> : <MicrophoneOnSVG />}
+        </div>
+        <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+          <AgentMultibandAudioVisualizer
+            state="speaking"
+            barWidth={2}
+            minBarHeight={1}
+            maxBarHeight={8}
+            frequencies={localMultibandVolume}
+            gap={1}
+          />
+        </div>
       </TrackToggle>
     </Button>
   );

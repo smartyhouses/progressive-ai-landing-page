@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import Link from 'next/link';
 import Image from 'next/image';
 import { useState } from 'react';
+import { GradientButton } from './ui/GradientButton';
 
 export const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -21,7 +22,7 @@ export const Navbar = () => {
       initial={{ y: -20, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.5 }}
-      className="fixed top-0 left-0 right-0 z-50 bg-transparent backdrop-blur-sm"
+      className="fixed top-0 left-0 right-0 z-50 bg-brand-darkBlue/95 backdrop-blur-sm"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
@@ -39,25 +40,26 @@ export const Navbar = () => {
             <nav className="flex items-center space-x-8">
               <button
                 onClick={() => scrollToSection('services')}
-                className="text-sm text-white hover:text-[#3B82F6] transition-colors"
+                className="text-sm font-heading text-white hover:text-[#3B82F6] transition-colors"
               >
                 Services
               </button>
               <button
                 onClick={() => scrollToSection('features')}
-                className="text-sm text-white hover:text-[#3B82F6] transition-colors"
+                className="text-sm font-heading text-white hover:text-[#3B82F6] transition-colors"
               >
                 Features
               </button>
             </nav>
 
             {/* Book a Call Button */}
-            <Link
-              href="#contact"
-              className="px-6 py-2.5 text-sm font-medium text-white bg-[#3B82F6] hover:bg-blue-600 rounded-full transition-colors"
+            <GradientButton
+              href="https://calendly.com/rahul-majumder043/discovery-call"
+              className="px-6 py-2.5 text-sm"
+              external
             >
               Book a Discovery Call
-            </Link>
+            </GradientButton>
           </div>
 
           {/* Mobile Menu Button */}
@@ -80,30 +82,29 @@ export const Navbar = () => {
               animate={{ opacity: 1, height: 'auto' }}
               exit={{ opacity: 0, height: 0 }}
               transition={{ duration: 0.2 }}
-              className="md:hidden overflow-hidden bg-black/80 backdrop-blur-lg"
+              className="md:hidden overflow-hidden bg-brand-darkBlue/95 backdrop-blur-lg"
             >
               <div className="flex flex-col py-4 space-y-4 px-4">
                 <button
                   onClick={() => scrollToSection('services')}
-                  className="text-white hover:text-[#3B82F6] transition-colors text-left"
+                  className="text-white font-heading hover:text-[#3B82F6] transition-colors text-left"
                 >
                   Services
                 </button>
                 <button
                   onClick={() => scrollToSection('features')}
-                  className="text-white hover:text-[#3B82F6] transition-colors text-left"
+                  className="text-white font-heading hover:text-[#3B82F6] transition-colors text-left"
                 >
                   Features
                 </button>
-                <Link
-                  href="#contact"
+                <GradientButton 
+                  href="https://calendly.com/rahul-majumder043/discovery-call" 
                   onClick={() => setIsMenuOpen(false)}
-                  className="inline-block"
+                  className="px-6 py-2.5 text-sm inline-block"
+                  external
                 >
-                  <span className="px-6 py-2.5 text-sm font-medium text-white bg-[#3B82F6] hover:bg-blue-600 rounded-full transition-colors inline-block">
-                    Book a Discovery Call
-                  </span>
-                </Link>
+                  Book a Discovery Call
+                </GradientButton>
               </div>
             </motion.div>
           )}
