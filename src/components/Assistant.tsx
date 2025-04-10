@@ -422,7 +422,7 @@ export default function Assistant({ title, logo, onConnect }: AssistantProps) {
         )}
       </div>
     );
-  }, [isAgentConnected, settings, onUpdateSettings, windowSize.width]);
+  }, [isAgentConnected, settings, onUpdateSettings, isMobileView]);
 
   return (
     <>

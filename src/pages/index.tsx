@@ -1,6 +1,6 @@
 import { AnimatePresence, motion } from "framer-motion";
 import Head from "next/head";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 import { HeroSection } from "@/components/sections/HeroSection";
 import { ServicesSection } from "@/components/sections/ServicesSection";
@@ -22,7 +22,14 @@ export function HomeInner() {
     message: string;
     type: ToastType;
   } | null>(null);
-  const { wsUrl, token } = useConnection();
+  const { wsUrl, token, connect } = useConnection();
+
+  useEffect(() => {
+    connect().catch((e) => {
+      setToastMessage({ message: e.message, type: "error" });
+      console.error(e);
+    });
+  }, [connect]);
 
   const title = "Progressive AI - Voice Agents for Business";
   const description =
@@ -72,17 +79,21 @@ export function HomeInner() {
           )}
         </AnimatePresence>
 
-        <HeroSection
-          wsUrl={wsUrl}
-          token={token}
-          onError={(e: Error) => {
-            setToastMessage({ message: e.message, type: "error" });
-            console.error(e);
-          }}
-        />
-        <ServicesSection />
-        <FeaturesSection />
-        <ContactSection />
+        {wsUrl && token ? (
+          <>
+            <HeroSection
+              wsUrl={wsUrl}
+              token={token}
+              onError={(e: Error) => {
+                setToastMessage({ message: e.message, type: "error" });
+                console.error(e);
+              }}
+            />
+            <ServicesSection />
+            <FeaturesSection />
+            <ContactSection />
+          </>
+        ) : null}
       </div>
     </>
   );
