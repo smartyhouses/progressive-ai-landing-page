@@ -29,8 +29,8 @@ export const Navbar = () => {
           {/* Logo */}
           <div className="flex items-center">
             <Link href="/" className="flex items-center gap-3">
-              <Image src="/progressive_ai_logo.png" alt="Progressive AI" width={32} height={32} className="h-8 w-auto" />
-              <Image src="/progressive AI_text logo.png" alt="Progressive AI" width={120} height={24} className="h-6 w-auto" />
+              <Image src="/progressive_ai_logo.png" alt="Portal" width={32} height={32} className="h-8 w-auto" />
+              <Image src="/progressive AI_text logo.png" alt="Portal" width={120} height={24} className="h-6 w-auto" />
             </Link>
           </div>
 

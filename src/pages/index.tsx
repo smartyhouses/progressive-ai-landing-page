@@ -31,7 +31,7 @@ export function HomeInner() {
     });
   }, [connect]);
 
-  const title = "Progressive AI - Voice Agents for Business";
+  const title = "Portal";
   const description =
     "Transform your business communication with intelligent AI voice agents. Experience natural conversations and seamless integration.";
 
