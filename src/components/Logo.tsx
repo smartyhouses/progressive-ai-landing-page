@@ -26,7 +26,7 @@ const Logo: React.FC<LogoProps> = ({ collapsed = false, className = '' }) => {
 
       {/* Brand Text */}
       <div className={`flex items-center transition-all duration-300 ${collapsed ? 'opacity-0 w-0' : 'opacity-100'}`}>
-        <span className={`font-bold bg-gradient-to-r from-white to-blue-100/90 bg-clip-text text-transparent ${textSize}`}>
+        <span className={`font-bold bg-gradient-to-r from-white to-black-100/90 bg-clip-text text-transparent ${textSize}`}>
           {logoText}
         </span>
         <span className="ml-1 text-sm font-semibold text-teal-400">
