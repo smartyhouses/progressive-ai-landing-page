@@ -11,7 +11,7 @@ interface GradientButtonProps extends Omit<HTMLMotionProps<"button">, 'children'
 }
 
 export const GradientButton = ({ children, href, className = '', external = false, ...props }: GradientButtonProps) => {
-  const buttonClasses = `px-8 py-3 bg-gradient-to-r from-blue-600 to-blue-800 hover:from-blue-700 hover:to-blue-900 text-white rounded-full font-heading font-medium transition-all duration-300 shadow-lg ${className}`;
+  const buttonClasses = `px-8 py-3 bg-gradient-to-r from-black-600 to-black-800 hover:from-violet-700 hover:to-black-900 text-white rounded-full font-heading font-medium transition-all duration-300 shadow-lg ${className}`;
 
   if (href) {
     return (

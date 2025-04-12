@@ -191,10 +191,10 @@ export default function Assistant({ title, logo, onConnect }: AssistantProps) {
               onConnect(roomState === ConnectionState.Disconnected);
             }}
           >
-            Start a Conversation
+            Говорите
           </Button>
           <a 
-            href="mailto:support@kno2gether.com"
+            href="mailto:shapiroisme@gmail.com"
             className="inline-block"
           >
             <Button

@@ -4,8 +4,8 @@ import { motion } from 'framer-motion';
 
 const services = [
   {
-    title: "Voice AI Agents",
-    description: "Custom voice assistants that understand context and deliver natural conversations.",
+    title: "Голосовые агенты ИИ",
+    description: "Персонализированные голосовые помощники, которые понимают контекст и поддерживают естественную речь..",
     icon: (
       <svg className="w-12 h-12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15Z" stroke="currentColor" strokeWidth="2"/>
@@ -14,8 +14,8 @@ const services = [
     ),
   },
   {
-    title: "Voice Integration",
-    description: "Seamlessly integrate voice capabilities into your existing systems and workflows.",
+    title: "Интеграция голоса",
+    description: "Легко интегрируйте голосовые возможности и естественный язык в существующие системы и рабочие процессы.",
     icon: (
       <svg className="w-12 h-12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M9 6L15 12L9 18" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
@@ -23,8 +23,8 @@ const services = [
     ),
   },
   {
-    title: "Custom Solutions",
-    description: "Tailored AI solutions designed specifically for your business needs and goals.",
+    title: "Персонализация",
+    description: "Индивидуальные решения на основе искусственного интеллекта, разработанные специально для личных нужд и целей Вашего бизнеса..",
     icon: (
       <svg className="w-12 h-12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M12 6V12M12 12V18M12 12H18M12 12H6" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
@@ -45,7 +45,7 @@ export const ServicesSection = () => {
             transition={{ duration: 0.6 }}
             className="text-4xl font-bold mb-4 text-progressive-100"
           >
-            Our AI Services
+            Открой Портал 
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -54,7 +54,7 @@ export const ServicesSection = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-xl text-brand-text-secondary max-w-2xl mx-auto"
           >
-            Discover how our AI-powered voice solutions can transform your business
+            Узнайте, как наши мультимодальные решения на базе искусственного интеллекта могут преобразовать Ваши жизнь и дела
           </motion.p>
         </div>
 

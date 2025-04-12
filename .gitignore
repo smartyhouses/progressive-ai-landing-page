@@ -8,7 +8,7 @@
 */.env
 frontend/.env
 agent/.env
-
+.env
 # testing
 /coverage
 

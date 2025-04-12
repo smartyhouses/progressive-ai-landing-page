@@ -65,33 +65,33 @@ export const HeroSection = ({ wsUrl, token, onError }: HeroSectionProps) => {
             transition={{ delay: 0.3 }}
             className="text-sm text-progressive-400 font-heading font-medium mb-6 inline-block px-4 py-2 bg-progressive-400/10 rounded-full"
           >
-            Transforming Business With AI
+            Трансформируем пизднес
           </motion.div>
 
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-heading font-bold mb-6 text-white">
-            Custom AI Agents Through<br />
+            ИИ, в котором есть правда<br />
             <ShuffleText 
               texts={[
-                "Rich Voice Experiences",
-                "Interactive Chat Interfaces",
-                "Embedded Web Widgets",
-                "Mobile App Experiences",
-                "Multi-modal Assistants"
+                "Мультимодальные агенты, которые позволят Вам общаться с Вашей техникой на естественном языке",
+                "Разпознавание и создание фото и видео",
+                "Постоянная память и профилирование пользователя",
+                "Использование на любом устройстве",
+                "И еще, и еще"
               ]}
-              className="text-[#3B82F6] inline-block"
+              className="text-[#8a1896] inline-block"
             />
           </h1>
           <p className="text-base sm:text-lg text-brand-text-secondary mb-8 max-w-2xl mx-auto font-sans">
-            We specialize in building tailored AI solutions that transform how businesses communicate, operate, and deliver value through innovative voice and web interactions.
+            Мультимодальные агенты, которые позволят Вам общаться с Вашей техникой на естественном языке.
           </p>
 
 
 
           <GradientButton
-            href="https://calendly.com/rahul-majumder043/discovery-call"
+            href="https://portalos.ru"
             external
           >
-            Book a Discovery Call
+            Гудни нам
           </GradientButton>
           
           {/* Decorative elements floating at the bottom of the circle */}
@@ -100,7 +100,7 @@ export const HeroSection = ({ wsUrl, token, onError }: HeroSectionProps) => {
           
           {/* Floating elements at the bottom of the circle */}
           <motion.div
-            className="absolute top-[53%] left-[46%] w-16 h-16 rounded-full bg-blue-500/20 blur-md"
+            className="absolute top-[53%] left-[46%] w-16 h-16 rounded-full bg-violet-500/20 blur-md"
             animate={{ y: [-5, 5, -5], x: [-5, 5, -5], scale: [0.95, 1.05, 0.95] }}
             transition={{ duration: 4, repeat: Infinity, repeatType: 'reverse' }}
           />

@@ -42,23 +42,23 @@ export const Navbar = () => {
                 onClick={() => scrollToSection('services')}
                 className="text-sm font-heading text-white hover:text-[#3B82F6] transition-colors"
               >
-                Services
+                Можем
               </button>
               <button
                 onClick={() => scrollToSection('features')}
                 className="text-sm font-heading text-white hover:text-[#3B82F6] transition-colors"
               >
-                Features
+                Умеем
               </button>
             </nav>
 
             {/* Book a Call Button */}
             <GradientButton
-              href="https://calendly.com/rahul-majumder043/discovery-call"
+              href="https://portalos.ru"
               className="px-6 py-2.5 text-sm"
               external
             >
-              Book a Discovery Call
+              Связь
             </GradientButton>
           </div>
 
@@ -89,21 +89,21 @@ export const Navbar = () => {
                   onClick={() => scrollToSection('services')}
                   className="text-white font-heading hover:text-[#3B82F6] transition-colors text-left"
                 >
-                  Services
+                  Умеем
                 </button>
                 <button
                   onClick={() => scrollToSection('features')}
                   className="text-white font-heading hover:text-[#3B82F6] transition-colors text-left"
                 >
-                  Features
+                  Умеем
                 </button>
                 <GradientButton 
-                  href="https://calendly.com/rahul-majumder043/discovery-call" 
+                  href="https://portalos.ru" 
                   onClick={() => setIsMenuOpen(false)}
                   className="px-6 py-2.5 text-sm inline-block"
                   external
                 >
-                  Book a Discovery Call
+                  Связь
                 </GradientButton>
               </div>
             </motion.div>

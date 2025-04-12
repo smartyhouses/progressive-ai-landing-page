@@ -21,7 +21,7 @@ export function Header({
         <span className="animate-pulse">🚀</span>
         <span className="ml-2">
           <a 
-            href="https://knotie-ai.pro" 
+            href="https://portalos.ru" 
             target="_blank" 
             rel="noopener noreferrer"
             className="text-knotie-400 hover:text-knotie-300"

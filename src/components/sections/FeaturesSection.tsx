@@ -4,34 +4,34 @@ import { motion } from 'framer-motion';
 
 const features = [
   {
-    title: "Natural Conversations",
-    description: "Our AI agents engage in natural, context-aware conversations that feel human-like.",
+    title: "Естественные разговоры  ",
+    description: "Наши агенты на базе искусственного интеллекта ведут естественные, контекстно-зависимые беседы, которые напоминают человеческие.",
   },
   {
-    title: "Real-time Processing",
-    description: "Lightning-fast response times with our advanced speech processing technology.",
+    title: "Обработка в реальном времени",
+    description: "Молниеносное время отклика благодаря нашей передовой технологии обработки речи.",
   },
   {
-    title: "Multi-voice Support",
-    description: "Choose from a variety of natural-sounding voices to match your brand.",
+    title: "Поддержка многоголосия",
+    description: "Выбирайте из множества естественно звучащих голосов, которые соответствуют вашему бренду.",
   },
   {
-    title: "Custom Training",
-    description: "Train your AI agent with your business knowledge and brand voice.",
+    title: "Индивидуальное обучение",
+    description: "Обучите своего ИИ-агента знаниям вашего бизнеса и фирменному стилю.",
   },
   {
-    title: "Analytics & Insights",
-    description: "Detailed analytics to understand and improve customer interactions.",
+    title: "Аналитика и идеи",
+    description: "Подробная аналитика для понимания и улучшения взаимодействия с клиентами.",
   },
   {
-    title: "Seamless Integration",
-    description: "Easy integration with your existing systems and workflows.",
+    title: "Полная интеграция",
+    description: "Простая интеграция с вашими существующими системами и рабочими процессами.",
   },
 ];
 
 export const FeaturesSection = () => {
   return (
-    <section id="features" className="py-20 bg-brand-deeperBlue">
+    <section id="features" className="py-20 bg-brand-violet">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <motion.h2
@@ -41,7 +41,7 @@ export const FeaturesSection = () => {
             transition={{ duration: 0.6 }}
             className="text-4xl font-bold mb-4 text-progressive-100"
           >
-            Powerful Features
+            Возможности
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -50,7 +50,7 @@ export const FeaturesSection = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-xl text-brand-text-secondary max-w-2xl mx-auto"
           >
-            Everything you need to create exceptional voice experiences
+            Все, что вам нужно для создания наилучших ИИ-ассистентов
           </motion.p>
         </div>
 
@@ -82,7 +82,7 @@ export const FeaturesSection = () => {
             href="#contact"
             className="inline-flex items-center px-8 py-3 bg-progressive-600 hover:bg-progressive-500 text-white rounded-full font-medium transition-colors"
           >
-            Get Started
+            Начать
             <svg
               className="w-5 h-5 ml-2"
               fill="none"

@@ -37,7 +37,7 @@ export const ContactSection = () => {
               transition={{ duration: 0.6 }}
               className="text-4xl font-bold mb-4 text-progressive-100"
             >
-              Ready to Transform Your Business?
+              Готовы?
             </motion.h2>
             <motion.p
               initial={{ opacity: 0, y: 20 }}
@@ -46,7 +46,7 @@ export const ContactSection = () => {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="text-xl text-brand-text-secondary"
             >
-              Book a discovery call with our team to explore how our AI voice agents can help you
+              Напрявьте нам заявку на получение униакального доступа к рабочей версии
             </motion.p>
           </div>
 
@@ -75,7 +75,7 @@ export const ContactSection = () => {
               </div>
               <div>
                 <label htmlFor="email" className="block text-brand-text-secondary mb-2">
-                  Email
+                  Электрический почтовый ящик 
                 </label>
                 <input
                   type="email"
@@ -91,7 +91,7 @@ export const ContactSection = () => {
 
             <div>
               <label htmlFor="company" className="block text-brand-text-secondary mb-2">
-                Company
+                Домохозяйство
               </label>
               <input
                 type="text"
@@ -106,7 +106,7 @@ export const ContactSection = () => {
 
             <div>
               <label htmlFor="message" className="block text-brand-text-secondary mb-2">
-                Message
+                Суть вопроса
               </label>
               <textarea
                 id="message"
@@ -125,7 +125,7 @@ export const ContactSection = () => {
                 type="button"
                 className="inline-flex items-center"
               >
-                Book Your Call
+                Поехали!
                 <svg
                   className="w-5 h-5 ml-2"
                   fill="none"
@@ -151,18 +151,18 @@ export const ContactSection = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
             {/* Contact Info */}
             <div>
-              <h3 className="text-xl font-heading font-bold text-white mb-4">Contact Us</h3>
+              <h3 className="text-xl font-heading font-bold text-white mb-4">На связи</h3>
               <p className="text-brand-text-secondary mb-2">
-                <span className="font-medium text-white">Phone:</span> <a href="tel:+917044311109" className="hover:text-progressive-400 transition-colors">+91 7044311109</a>
+                <span className="font-medium text-white">Телефон:</span> <a href="tel:+74957779777" className="hover:text-progressive-400 transition-colors">+74957779777</a>
               </p>
               <p className="text-brand-text-secondary">
-                <span className="font-medium text-white">Email:</span> <a href="mailto:info@progressive-ai.com" className="hover:text-progressive-400 transition-colors">info@progressive-ai.com</a>
+                <span className="font-medium text-white">Почта:</span> <a href="mailto:shapiroisme@gmail.com" className="hover:text-progressive-400 transition-colors">info@progressive-ai.com</a>
               </p>
             </div>
             
             {/* Social Media */}
             <div>
-              <h3 className="text-xl font-heading font-bold text-white mb-4">Follow Us</h3>
+              <h3 className="text-xl font-heading font-bold text-white mb-4">Айда с нами</h3>
               <div className="flex space-x-4">
                 <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-brand-text-secondary hover:text-progressive-400 transition-colors">
                   <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
@@ -184,17 +184,17 @@ export const ContactSection = () => {
             
             {/* Location */}
             <div>
-              <h3 className="text-xl font-heading font-bold text-white mb-4">Location</h3>
+              <h3 className="text-xl font-heading font-bold text-white mb-4">На местности</h3>
               <p className="text-brand-text-secondary">
-                Bangalore, India<br />
-                Remote teams worldwide
+                Москва, РФ<br />
+                Сделано людьми
               </p>
             </div>
           </div>
           
           {/* Copyright */}
           <div className="mt-10 pt-6 border-t border-brand-border text-center text-sm text-brand-text-secondary">
-            <p>© {new Date().getFullYear()} Progressive AI. All rights reserved.</p>
+            <p>© {new Date().getFullYear()} АО Портал</p>
           </div>
         </div>
       </div>

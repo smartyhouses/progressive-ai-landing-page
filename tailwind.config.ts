@@ -9,7 +9,7 @@ const progressive = {
   200: "#c7d2fe",
   300: "#a5b4fc",
   400: "#818cf8",
-  500: "#6366f1",
+  500: "#3b82f6",
   600: "#4f46e5",
   700: "#4338ca",
   800: "#3730a3",
@@ -22,8 +22,8 @@ const brand = {
   border: "#1e293b",
   hover: "#4f46e5",
   text: {
-    primary: "#F9FAFB",
-    secondary: "#e0e7ff",
+    primary: "#3b82f6",
+    secondary: "#3b82f6",
     muted: "#818cf8"
   }
 };
