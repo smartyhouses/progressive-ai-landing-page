@@ -156,7 +156,7 @@ export const ContactSection = () => {
                 <span className="font-medium text-white">Телефон:</span> <a href="tel:+74957779777" className="hover:text-progressive-400 transition-colors">+74957779777</a>
               </p>
               <p className="text-brand-text-secondary">
-                <span className="font-medium text-white">Почта:</span> <a href="mailto:shapiroisme@gmail.com" className="hover:text-progressive-400 transition-colors">info@progressive-ai.com</a>
+                <span className="font-medium text-white">Почта:</span> <a href="mailto:shapiroisme@gmail.com" className="hover:text-progressive-400 transition-colors">shapiroisme@gmail.com</a>
               </p>
             </div>
             
